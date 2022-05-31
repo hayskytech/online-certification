@@ -21,14 +21,16 @@ $args = array(
 $enrollment = get_posts($args);
 if ($enrollment[0]->ID) {
 	$meta = get_post_meta($enrollment[0]->ID);
-	$student = get_the_title($meta["student"][0]);
+	$student = get_the_title($enrollment[0]->ID);
 	$course = get_the_title($meta["course"][0]);
 	$image = '';
-	if (has_post_thumbnail( $meta["student"][0] ) ){
-		$img_id = get_post_thumbnail_id( $meta["student"][0] );
+	if (has_post_thumbnail( $enrollment[0]->ID ) ){
+		$img_id = get_post_thumbnail_id( $enrollment[0]->ID );
 		$file_url = wp_get_attachment_url( $img_id );
 		$image = wp_get_attachment_image_src($img_id, 'medium')[0];
 	}
+	$d1 = date('d-M-Y', strtotime($meta["start_date"][0]));
+	$d2 = date('d-M-Y', strtotime($meta["end_date"][0]));
 ?>
 <div id="certificate" style="position: relative;">
 	<p id="p1">THIS CERTIFICATE IS AWARDED TO</p>
@@ -36,7 +38,7 @@ if ($enrollment[0]->ID) {
 	<p id="p3">for  the  successful  completion  of  training  on </p>
 	<p id="p4"><?php echo $course; ?></p>
 	<p id="p5">During  the  period  of</p>
-	<p id="p6"><?php echo $meta["start_date"][0]; ?> to <?php echo $meta["end_date"][0]; ?></p>
+	<p id="p6"><?php echo $d1; ?> to <?php echo $d2; ?></p>
 	<p id="p7">URL: https://haysky.com/verify/<?php echo $meta["certificate"][0]; ?></p>
 	<img src="<?php echo plugin_dir_url(__FILE__); ?>certificate.jpg">
 	<?php

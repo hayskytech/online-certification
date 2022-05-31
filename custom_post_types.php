@@ -2,27 +2,6 @@
 // Custom Post Type //
 add_action( "init",function(){
 
-    // Custom Post Type for Students //
-    $labels = array(
-        "name" => "Students",
-        "singular_name" => "Student",
-        "add_new"    => "Add Student",
-        "add_new_item" => "Add New Student",
-        "all_items" => "All Students",
-    );
-    $args = array(    
-        "public" => true,
-        "label"       => "Students",
-        "labels"      => $labels,
-        "description" => "Students custom post type.",
-        "menu_icon"      => "dashicons-universal-access",    
-        "supports"   => array( "title", "thumbnail"),
-        "capability_type" => "post",
-        "publicly_queryable"  => false,
-        'menu_position' => 5
-    );
-    register_post_type("student", $args);
-
     // Enrollment
     $labels0 = array(
         "name" => "Enrollments",
@@ -37,7 +16,7 @@ add_action( "init",function(){
         "labels"      => $labels0,
         "description" => "Enrollments custom post type.",
         "menu_icon"      => "dashicons-pressthis",    
-        "supports"   => array( "title"),
+        "supports"   => array( "title", "thumbnail"),
         "capability_type" => "page",
         "publicly_queryable"  => false,
         'menu_position' => 5
