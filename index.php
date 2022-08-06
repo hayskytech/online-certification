@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: #Coaching Center
+Plugin Name: Online Certification
 Plugin URI: https://www.haysky.com/
 Description: Add students, courses, duration, fees and enrollment. Online verify certificate.
 Version: 2.0.0
-Author: Sufyan
-Author URI: https://www.sufyan.in/
+Author: Haysky
+Author URI: https://www.haysky.com/
 License: GPLv2 or later
 Text Domain: sufyan
 */
