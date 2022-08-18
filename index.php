@@ -1,14 +1,13 @@
 <?php
-/*
-Plugin Name: Online Certification
-Plugin URI: https://www.haysky.com/
-Description: Add students, courses, duration, fees and enrollment. Online verify certificate.
-Version: 2.0.0
-Author: Haysky
-Author URI: https://www.haysky.com/
-License: GPLv2 or later
-Text Domain: sufyan
-*/
+/**
+ * Plugin Name: Online Certification
+ * Plugin URI: https://haysky.com/
+ * Description: Add students, courses, duration, fees and enrollment. Online verify certificate.
+ * Version: 2.0.0
+ * Author: Haysky
+ * Author URI: https://haysky.com/
+ * License: GPLv2 or later
+ */
 error_reporting(E_ERROR | E_PARSE);
 // $wpdb->show_errors(); $wpdb->print_error();
 // $int = (int) filter_var($str, FILTER_SANITIZE_NUMBER_INT);
