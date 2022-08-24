@@ -37,9 +37,9 @@ add_action( "init",function(){
         "labels"      => $labels,
         "description" => "Courses custom post type.",
         "menu_icon"      => "dashicons-welcome-widgets-menus",    
-        "supports"   => array( "title", "editor", "thumbnail"),
+        "supports"   => array( "title"),
         "capability_type" => "page",
-        "publicly_queryable"  => true,
+        "publicly_queryable"  => false,
         'menu_position' => 5
     );
     register_post_type("course", $args);
