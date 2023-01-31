@@ -131,6 +131,10 @@ document.title = '<?php echo $cid.' - '.$student.' - '.$course; ?>';    var qr;
 	#primary{
 		padding: 10px !important;
 		height: 100vh;
+		width: 100vw;
+	}
+	main{
+		max-width: 100% !important;
 	}
 	header,footer,main header,.widget-area.secondary{
 		display: none;
