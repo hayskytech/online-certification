@@ -73,7 +73,7 @@ document.title = '<?php echo $cid.' - '.$student.' - '.$course; ?>';    var qr;
 	top: 28%;
 }
 #p2{
-	color: #0300a9;
+	color: #0300a9 !important;
 	font-size: 2.6vw;
 	top: 36%;
 }
@@ -82,7 +82,7 @@ document.title = '<?php echo $cid.' - '.$student.' - '.$course; ?>';    var qr;
 	top: 45%;
 }
 #p4{
-	color: #0300a9;
+	color: #0300a9 !important;
 	top: 49%;
 }
 #p5{
@@ -90,7 +90,7 @@ document.title = '<?php echo $cid.' - '.$student.' - '.$course; ?>';    var qr;
 	font-size: 2vw;
 }
 #p6{
-	color: #0300a9;
+	color: #0300a9 !important;
 	top: 59%;
 }
 #p7{
